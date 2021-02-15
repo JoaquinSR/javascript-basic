@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="author" content="Joaquin Sanchez Rodriguez">
+    <meta name="description" content="javascript-basic">
+    <title>javascript-basic</title>
+</head>
+<body>
+    <script>
+        /*Exercici 1*/
+        console.log("Hola mundo");
+
+        /*Exercici 2*/
+        alert("¡Me llamo Joaquin!");
+
+        /*Exercici 3*/
+        var nom = "Joaquin";
+        var cognom = "Sanchez";
+        console.log(nom+" "+cognom);
+
+        /*Exercici 4*/
+        var num1 = 7;
+        var num2 = 9;
+        console.log("La suma entre "+num1+" i "+num2+" es "+(num1+num2));
+
+        /*Exercici 5*/
+        var nota_examen = prompt("Introduce tu nota");
+        if (nota_examen<5){
+            alert("Ohh has suspendido el examen con un " +nota_examen);
+        }
+        else{
+            alert("Has aprovado el examen con un " +nota_examen);
+        }
+
+        /*Exercici 6*/
+        var text = ("Tinc un cotxe de color blau");
+        var textV = text.replace('blau','verd');
+        var textU = text.replace(/o/gi,"u");
+        console.log(text);
+        console.log(textV);
+        console.log(textU);
+
+        /*Exercici 7*/
+        var llistat = ["taula","cadira","ordinador","llibreta"];
+        var i = 0;
+        for ( i ; i<llistat.length ; i++ ){
+            console.log("L'objecte "+llistat[i]+" està a la posició "+i);
+        }
+
+        /*Exercici 8*/
+        function calculadora(operador,valor1,valor2)
+        {
+            if (operador == "suma"){
+                return valor1+valor2;
+            }
+            else if (operador == "resta"){
+                return valor1-valor2;
+            }
+            else if (operador == "multiplicacio"){
+                return valor1*valor2;
+            }
+        }
+        var resultat = calculadora('resta',40,20);
+        document.write(+resultat);
+
+    </script>
+
+</body>
+</html>
